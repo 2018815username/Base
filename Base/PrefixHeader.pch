@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  Base
+//
+//  Created by qwater on 15/12/28.
+//  Copyright © 2015年 qwater. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#ifdef __OBJC__
+
+// Standard iOS Imports
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Masonry/Masonry.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <UIView+Toast.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <Reachability/Reachability.h>
+#import "AppDelegate.h"
+#endif
+
+#ifdef DEBUG
+#define Debug(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define Debug(format, ...)
+#endif
+
+#define IS_IOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

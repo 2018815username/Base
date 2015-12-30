@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios ,'8.0'
+
+pod 'ReactiveCocoa', '2.5'
+pod 'AFNetworking','2.6.1'
+pod 'Masonry','0.6.3'
+pod 'SDWebImage', '3.7.3'
+pod 'SVProgressHUD', '1.1.3'
+pod 'Toast', '2.4'
+pod 'MJRefresh','2.4.7'
+pod 'CocoaAsyncSocket','7.4.2'
+pod 'FMDB', '2.5'
+pod 'MBProgressHUD', '0.9.1'
+pod 'Reachability','3.0.0'
